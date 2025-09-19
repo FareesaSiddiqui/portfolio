@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className="py-20 px-6">
+    <section id="about" className="py-20 px-6">
       <div className="container max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Image */}

@@ -1,14 +1,15 @@
 const SkillsSection = () => {
   const skills = [
-    { name: "React & Next.js", level: 9 },
-    { name: "TypeScript", level: 8 },
-    { name: "Node.js & Express", level: 8 },
-    { name: "Python & Django", level: 7 },
-    { name: "UI/UX Design", level: 9 },
-    { name: "Database Design", level: 8 },
-    { name: "Cloud & DevOps", level: 7 },
-    { name: "Mobile Development", level: 6 },
+    { name: "MERN", level: 8 },
+    { name: "JavaScript", level: 7 },
+    { name: "Node.js Express", level: 8 },
+    { name: "React", level: 6 },
+    { name: "REST API", level: 7 },
+    { name: "MongoDB", level: 7 },
+    { name: "JWT", level: 7 },
   ];
+
+  const movingSkills = ["MongoDB", "Node.js", "React.js", "Git", "Multer", "Cloudinary", "Deployment", "Express", "OpenAI API", "JWT", "Tailwind"];
 
   const SkillDots = ({ level }: { level: number }) => (
     <div className="skill-dots">
@@ -22,7 +23,7 @@ const SkillsSection = () => {
   );
 
   return (
-    <section className="py-20 px-6">
+    <section id="skills" className="py-20 px-6">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
@@ -45,17 +46,19 @@ const SkillsSection = () => {
           ))}
         </div>
         
-        {/* Additional Skills Categories */}
-        <div className="mt-16 text-center">
-          <div className="flex flex-wrap gap-4 justify-center max-w-4xl mx-auto">
-            {["React", "Vue.js", "Angular", "Figma", "Photoshop", "Git", "AWS", "Docker"].map((tech) => (
-              <span
-                key={tech}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-sm font-semibold hover:scale-105 transition-all duration-300"
-              >
-                {tech}
-              </span>
-            ))}
+        {/* Moving Skills Line */}
+        <div className="mt-16 overflow-hidden">
+          <div className="relative">
+            <div className="flex gap-8 animate-scroll whitespace-nowrap group">
+              {[...movingSkills, ...movingSkills].map((skill, index) => (
+                <span
+                  key={index}
+                  className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-sm font-semibold transition-all duration-300 hover:scale-110 hover:text-primary-foreground hover:bg-primary/40 cursor-pointer group-hover:[animation-play-state:paused]"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

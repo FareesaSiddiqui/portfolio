@@ -3,10 +3,14 @@ import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
+import Navigation from "@/components/Navigation";
 
 const Portfolio = () => {
   return (
     <main className="relative">
+      {/* Navigation */}
+      <Navigation />
+      
       {/* Background Pattern Overlay */}
       <div className="fixed inset-0 opacity-5 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>

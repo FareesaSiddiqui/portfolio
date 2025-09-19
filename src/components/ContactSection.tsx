@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Linkedin, Github, Mail } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 px-6">
+    <section id="contact" className="py-20 px-6">
       <div className="container max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
@@ -91,9 +92,9 @@ const ContactSection = () => {
             </div>
           </form>
           
-          {/* Social Links or Contact Info */}
+          {/* Social Links */}
           <div className="mt-12 text-center">
-            <div className="flex justify-center gap-8">
+            <div className="flex justify-center gap-8 mb-8">
               <div className="text-center">
                 <div className="text-primary font-semibold">Email</div>
                 <div className="text-muted-foreground text-sm">hello@meriem.dev</div>
@@ -106,6 +107,19 @@ const ContactSection = () => {
                 <div className="text-primary font-semibold">Location</div>
                 <div className="text-muted-foreground text-sm">New York, USA</div>
               </div>
+            </div>
+            
+            {/* Social Media Icons */}
+            <div className="flex justify-center gap-6">
+              <a href="#" className="glow-card p-4 hover:scale-110 transition-transform duration-300">
+                <Linkedin className="w-6 h-6 text-primary" />
+              </a>
+              <a href="#" className="glow-card p-4 hover:scale-110 transition-transform duration-300">
+                <Github className="w-6 h-6 text-primary" />
+              </a>
+              <a href="#" className="glow-card p-4 hover:scale-110 transition-transform duration-300">
+                <Mail className="w-6 h-6 text-primary" />
+              </a>
             </div>
           </div>
         </div>

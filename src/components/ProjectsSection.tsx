@@ -55,7 +55,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section id="projects" className="py-20 px-6">
       <div className="container max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-8">
@@ -87,47 +87,49 @@ const ProjectsSection = () => {
           </div>
         </div>
         
-        {/* Projects Grid */}
+        {/* Projects Slider */}
         {activeTab === 'projects' && (
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-            {projects.map((project) => (
-              <div key={project.id} className="glow-card group">
-                {/* Project Image Placeholder */}
-                <div className="w-full h-48 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 mb-6 flex items-center justify-center border border-primary/20">
-                  <span className="text-muted-foreground">Project Image</span>
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+          <div className="overflow-hidden">
+            <div className="flex gap-8 animate-scroll-slow group">
+              {[...projects, ...projects].map((project, index) => (
+                <div key={`${project.id}-${index}`} className="glow-card group-hover:[animation-play-state:paused] hover:scale-105 transition-transform duration-300 flex-shrink-0 w-80">
+                  {/* Project Image Placeholder */}
+                  <div className="w-full h-48 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 mb-6 flex items-center justify-center border border-primary/20">
+                    <span className="text-muted-foreground">Project Image</span>
                   </div>
                   
-                  <div className="flex gap-3 pt-2">
-                    <button className="btn-neon text-sm px-6 py-2">
-                      Live Demo
-                    </button>
-                    <button className="btn-neon-outline text-sm px-6 py-2">
-                      Code
-                    </button>
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">
+                      {project.title}
+                    </h3>
+                    
+                    <p className="text-muted-foreground leading-relaxed">
+                      {project.description}
+                    </p>
+                    
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-3 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    
+                    <div className="flex gap-3 pt-2">
+                      <button className="btn-neon text-sm px-6 py-2">
+                        Live Demo
+                      </button>
+                      <button className="btn-neon-outline text-sm px-6 py-2">
+                        Code
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
         

@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Hero Gradient Background */}
       <div 
         className="absolute inset-0 opacity-60"
