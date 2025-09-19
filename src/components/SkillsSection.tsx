@@ -4,6 +4,7 @@ const SkillsSection = () => {
     { name: "JavaScript", level: 7 },
     { name: "Node.js Express", level: 8 },
     { name: "React", level: 6 },
+    { name: "Tailwind", level: 5 },
     { name: "REST API", level: 7 },
     { name: "MongoDB", level: 7 },
     { name: "JWT", level: 7 },

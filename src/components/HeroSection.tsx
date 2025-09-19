@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center px-6 overflow">
       {/* Hero Gradient Background */}
       <div 
         className="absolute inset-0 opacity-60"
@@ -12,12 +12,20 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold">
-                Hi, I'm <span className="text-primary">Meriem</span>
+              <h1 className="mt-5 text-5xl lg:text-7xl font-bold">
+                Hi, I'm <span className="text-primary">Fareesa</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl">
-                I create stunning digital experiences through innovative design and development
-              </p>
+<h2 className="text-3xl lg:text-4xl font-semibold text-primary mt-2">
+  Full Stack Developer
+</h2>
+<p className="text-lg lg:text-xl text-muted-foreground max-w-2xl">
+ I'm a passionate Full Stack Developer with a strong focus on backend
+  development and building scalable web applications. I enjoy solving
+  real-world problems through clean code, modern technologies, and
+  innovative solutions
+  </p>
+
+
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -42,7 +50,8 @@ const HeroSection = () => {
             <div className="relative">
               <div className="circle-frame w-80 h-80 lg:w-96 lg:h-96">
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <span className="text-muted-foreground text-lg">Profile Image</span>
+                <img src="/fareesa2.jpeg" alt="" />
+                  {/* <span className="text-muted-foreground text-lg">Profile Image</span> */}
                 </div>
               </div>
               {/* Floating decorative elements */}
