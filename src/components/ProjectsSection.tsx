@@ -14,7 +14,7 @@ const ProjectsSection = () => {
       technologies: ["React", "Node.js", "MongoDB", "Express", "JWT"],
       imageUrl: "/image.png",
       liveDemoUrl: "https://foodapp-ua89.onrender.com/",
-      codeUrl: "https://github.com/your-username/ecommerce-app",
+      codeUrl: "https://github.com/FareesaSiddiqui/FoodApp",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const ProjectsSection = () => {
       technologies: ["Mern", "Firebase", "Tailwind", "Google Gemini"],
       imageUrl: "/image1.png",
       liveDemoUrl: "https://ai-writingassist-frontend.onrender.com/",
-      codeUrl: "https://github.com/your-username/task-manager",
+      codeUrl: "https://github.com/FareesaSiddiqui/AI-WritingAssist",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const ProjectsSection = () => {
       technologies: ["Nodejs", "Express", "Cookie", "EJS template"],
       imageUrl: "/image2.png",
       liveDemoUrl: "https://wanderlust-flf4.onrender.com/",
-      codeUrl: "https://github.com/your-username/portfolio",
+      codeUrl: "https://github.com/FareesaSiddiqui/WanderLust",
     },
   ];
 

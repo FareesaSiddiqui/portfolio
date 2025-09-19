@@ -176,7 +176,7 @@ const ContactSection = () => {
             <Linkedin className="w-6 h-6 text-primary" />
           </a>
           <a
-            href="https://github.com/FareesaSidduiqui"
+            href="https://github.com/FareesaSiddiqui"
             target="_blank"
             rel="noopener noreferrer"
             className="glow-card p-4 hover:scale-110 transition-transform duration-300"
