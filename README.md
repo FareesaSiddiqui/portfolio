@@ -11,8 +11,9 @@ Simply visit the [Lovable Project](https://lovable.dev/projects/aee9f9f6-ecc4-4e
 A modern and minimal personal portfolio website built with Vite, React, TypeScript, Tailwind CSS, and shadcn-ui.
 It showcases my projects, certificates, skills, and achievements as a Full Stack Developer.
 
+Portfolio Live Link : https://fareesa-portfolio-2767c1kai.vercel.app/
 
-
+-----------------------------------
 🚀 Tech Stack
 
 ⚡ Vite – Fast build tool & dev server
@@ -25,7 +26,7 @@ It showcases my projects, certificates, skills, and achievements as a Full Stack
 
 🧩 shadcn-ui – Accessible and customizable UI components
 
-
+------------------------------------
 
 📌 Features
 
