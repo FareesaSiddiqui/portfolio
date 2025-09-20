@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Dark Portfolio Design System with Purple Neon Theme */
 
 @layer base {

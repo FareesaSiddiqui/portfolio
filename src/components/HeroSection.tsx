@@ -28,14 +28,42 @@ const HeroSection = () => {
 
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="btn-neon">
-                Get Started
-              </button>
-              <button className="btn-neon-outline">
-                View Portfolio
-              </button>
-            </div>
+<div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+  <a
+    href="#projects"
+    className="btn-neon flex items-center gap-2"
+    onClick={(e) => {
+      e.preventDefault();
+      document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    <span>Explore Projects</span>
+    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+    </svg>
+  </a>
+
+  <a
+    href="#contact"
+    className="btn-neon-outline flex items-center gap-2"
+    onClick={(e) => {
+      e.preventDefault();
+      document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    <span>Get in Touch</span>
+    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M4 16v4h16v-4M12 12v8m0 0l4-4m-4 4l-4-4"
+      />
+    </svg>
+  </a>
+</div>
+
+
             
             {/* Decorative Dots */}
             <div className="flex gap-3 justify-center lg:justify-start mt-8">
