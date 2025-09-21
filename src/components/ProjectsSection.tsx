@@ -37,6 +37,16 @@ const ProjectsSection = () => {
       liveDemoUrl: "https://wanderlust-flf4.onrender.com/",
       codeUrl: "https://github.com/FareesaSiddiqui/WanderLust",
     },
+      {
+      id: 4,
+      title: "AI Resume Analyzer",
+      description:
+        "Build backend focus more website using session base authentication through cookies along with pagination and filter features, A application where user can search place to stay and book regarding their needs and comfort.",
+      technologies: ["Nodejs", "Express", "JWT", "React", "Google Gemini API"],
+      imageUrl: "/resume.png",
+      liveDemoUrl: "https://ai-resume-analyzer-taupe-nine.vercel.app/",
+      codeUrl: "https://github.com/FareesaSiddiqui/AI-ResumeAnalyzer",
+    },
   ];
 
   const certificates = [
