@@ -41,7 +41,7 @@ const ProjectsSection = () => {
       id: 4,
       title: "AI Resume Analyzer",
       description:
-        "Build backend focus more website using session base authentication through cookies along with pagination and filter features, A application where user can search place to stay and book regarding their needs and comfort.",
+      "Built a full-stack MERN application with JWT authentication and Multer for secure resume uploads, integrating Google Gemini API for grammar and content analysis.",
       technologies: ["Nodejs", "Express", "JWT", "React", "Google Gemini API"],
       imageUrl: "/Resume.png",
       liveDemoUrl: "https://ai-resume-analyzer-taupe-nine.vercel.app/",
