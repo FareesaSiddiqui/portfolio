@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       description:
         "Build backend focus more website using session base authentication through cookies along with pagination and filter features, A application where user can search place to stay and book regarding their needs and comfort.",
       technologies: ["Nodejs", "Express", "JWT", "React", "Google Gemini API"],
-      imageUrl: "/resume.png",
+      imageUrl: "/Resume.png",
       liveDemoUrl: "https://ai-resume-analyzer-taupe-nine.vercel.app/",
       codeUrl: "https://github.com/FareesaSiddiqui/AI-ResumeAnalyzer",
     },
